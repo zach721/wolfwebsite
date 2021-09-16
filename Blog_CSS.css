@@ -1,0 +1,73 @@
+/*
+author: Zakarias el himsi belmaati
+date: 16th/September/2021
+from freelance projects
+*/
+
+@keyframes animation {
+0%{filter: drop-shadow(0.15rem 0.25rem 0.65rem
+     rgb(253, 253, 253));
+}
+50%{filter: drop-shadow(0.15rem 0.25rem 0.25rem
+     rgb(253,253, 253));
+}
+100%{filter: drop-shadow(0.15rem 0.25rem 0.65rem
+     rgb(253, 253, 253));
+}
+}
+@keyframes keyexample {
+0%{transform: translateX(250px) translateY(0px);}
+30%{transform: translateX(270px)translateY(0px);
+}
+70%{transform: translateX(230px)translateY(0px) ;}    
+100%{transform: translateX(250px) translateY(0px);}
+}
+/*add my font */
+@font-face {
+    font-family: myfirstfont;
+    src: url('Font.ttf');
+}
+/*calling elements and ids*/
+body{
+    background-color: #040408;
+    /*adjust website size*/
+     height: 100%;
+     overflow: hidden;
+}
+#text1{ 
+    /*change text font*/
+    font-family: myfirstfont;
+    color: white;
+    /*text position*/
+    transform: translateX(153px)translateY(0px);
+    /*text not selectable*/
+    user-select: none;
+}
+#text2{
+    font-family: myfirstfont;
+    color: white;
+    transform: translateX(325px)translateY(0px);
+    user-select: none;
+}
+#text3{ 
+    font-family: myfirstfont;
+    color: white;
+transform: translateX(345px)translateY(80px);
+user-select: none;
+}
+img{
+    transform: translateX(250px)translateY(0);
+    opacity: 0.5;
+    /*shadow image*/
+    filter: drop-shadow(0.15rem 0.25rem 0.65rem
+    /*color of shadow*/
+    rgb(253, 253, 253));
+    /*not selectable*/
+    user-select: none;
+    /*animation name from keyframe*/    
+    animation-name: animation;
+    /*keyframe duration*/
+    animation-duration: 5s;
+    /*infinite animation*/
+    animation-iteration-count: infinite;
+}
