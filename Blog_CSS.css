@@ -52,7 +52,7 @@ body{
 #text3{ 
     font-family: myfirstfont;
     color: white;
-transform: translateX(345px)translateY(80px);
+transform: translateX(345px)translateY(-80px);
 user-select: none;
 }
 img{
